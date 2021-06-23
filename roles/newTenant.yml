@@ -1,0 +1,7 @@
+---
+- name: New tenant
+  hosts: aci
+     
+  roles:
+    #- tenant
+    - contracts

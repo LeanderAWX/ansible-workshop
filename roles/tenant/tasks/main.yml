@@ -1,0 +1,11 @@
+---
+- name: Add a new tenant
+  cisco.aci.aci_tenant:
+    host: "{{ansible_host}}"
+    username: "{{ username }}"
+    password: "{{ password }}"
+    validate_certs: no
+    tenant: "Fabios_Tenant"
+    description: "WLAn_tenant"
+    state: present
+  delegate_to: localhost
