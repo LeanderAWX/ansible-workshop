@@ -1,0 +1,27 @@
+---
+- name: Uebung4
+  hosts: node1
+  tasks:
+    - name: Create folder
+      file:
+        path: ~/uebung4
+        state: dirctory
+        mode: '0755'
+    
+    - name: File erstellen
+      copy:
+        dest: "~/uebung4/essen.txt"
+        content: "{{ essen }}"
+      become: yes
+
+    - name: File erstellen
+      copy:
+        dest: "~/uebung4/date.txt"
+        content: "{{ date }}"
+      become: yes
+
+    - name: File erstellen
+      copy:
+        dest: "~/uebung4/ip.txt"
+        content: "{{ ip }}"
+      become: yes
