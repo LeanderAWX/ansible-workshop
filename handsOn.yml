@@ -4,24 +4,24 @@
   tasks:
     - name: Create folder
       file:
-        path: ~/uebung4
+        path: /uebung4
         state: directory
         mode: '0755'
     
     - name: File erstellen
       copy:
-        dest: "~/uebung4/essen.txt"
+        dest: "/uebung4/essen.txt"
         content: "{{ essen }}"
       become: yes
 
     - name: File erstellen
       copy:
-        dest: "~/uebung4/date.txt"
+        dest: "/uebung4/date.txt"
         content: "{{ date }}"
       become: yes
 
     - name: File erstellen
       copy:
-        dest: "~/uebung4/ip.txt"
+        dest: "/uebung4/ip.txt"
         content: "{{ ip }}"
       become: yes
