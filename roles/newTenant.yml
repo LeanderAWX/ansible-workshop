@@ -3,5 +3,5 @@
   hosts: aci
      
   roles:
-    #- tenant
-    - contracts
+    - tenant
+    #- contracts

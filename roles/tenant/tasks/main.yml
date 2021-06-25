@@ -5,7 +5,10 @@
     username: "{{ username }}"
     password: "{{ password }}"
     validate_certs: no
-    tenant: "Fabios_Tenant"
+    tenant: "Fabios_Tenant1"
     description: "WLAn_tenant"
     state: present
   delegate_to: localhost
+
+- name: Include task list in play
+  include_tasks: test.yaml

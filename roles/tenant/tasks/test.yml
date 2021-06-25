@@ -1,0 +1,4 @@
+---
+- name: Test task in roles
+  ansible.builtin.debug:
+    msg: "Test"
