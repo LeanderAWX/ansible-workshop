@@ -5,7 +5,7 @@
     - name: Create folder
       file:
         path: ~/uebung4
-        state: dirctory
+        state: directory
         mode: '0755'
     
     - name: File erstellen
